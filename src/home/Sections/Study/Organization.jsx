@@ -7,7 +7,7 @@ export default function Organization({ item, side }) {
         side === "left" ? "md:justify-start" : "md:justify-end"
       }`}
     >
-      <div className="w-[90%] md:w-[45%] bg-linear-to-br from-[#4c0d5fbb] via-[#6a1b9a] to-[#1976d2] text-white rounded-xl p-2 md:p-6 shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] border border-[#ffffff22]">
+      <div className="w-[90%] md:w-[45%] bg-linear-to-br from-[#1e1b4b] via-[#312e81] to-[#155e75] text-white rounded-xl p-2 md:p-6 shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0_0_32px_rgba(34,211,238,0.3)] border border-white/15">
         <h2 className="md:text-xl font-bold mb-1 tracking-wide drop-shadow-lg">
           {item.title}
         </h2>

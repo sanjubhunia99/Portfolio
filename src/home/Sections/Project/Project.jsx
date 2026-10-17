@@ -370,12 +370,11 @@ const Project = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, delay: i * 0.12 }}
               viewport={{ once: true }}
-              // className="rounded-xl bg-black/25 backdrop-blur-md border border-white/10 overflow-hidden hover:-translate-y-2 hover:shadow-[0_0_24px_rgba(34,211,238,0.35)] transition-all duration-300"
             >
               <div className="px-3 pt-5 pb-3 sm:px-5">
                 <div className="relative mx-auto w-full max-w-115">
-                  <div className="relative rounded-t-[18px] bg-[#1f4044] p-2 shadow-2xl ring-1 ring-white/15">
-                    <div className="absolute left-1/2 top-2 z-30 h-4.5 w-18 -translate-x-1/2 rounded-b-xl bg-[#385674] sm:h-5 sm:w-21">
+                  <div className="relative rounded-t-[18px] bg-[#1e1b4b] p-2 shadow-2xl ring-1 ring-white/15">
+                  <div className="absolute left-1/2 top-2 z-30 h-4.5 w-18 -translate-x-1/2 rounded-b-xl bg-[#312e81] sm:h-5 sm:w-21">
                       <span className="absolute left-1/2 top-1 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-slate-800 ring-1 ring-slate-700"></span>
                     </div>
 

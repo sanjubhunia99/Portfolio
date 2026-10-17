@@ -12,15 +12,15 @@ const AboutMe = () => {
         data-cursor="-inverse"
         src={ProfileImg}
         alt="Profile"
-        className="w-35 h-35 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 border-white mb-6"
+        className="profile-portrait w-35 h-35 md:w-80 md:h-80 rounded-full object-fit cover object-position top border-2 mb-6"
       />
       <h1 className="text-2xl md:text-4xl font-semibold text-white">
-        <span className="text-blue-400">
+        <span className="text-cyan-200">
           <span className="inline-block wave-hand">👋</span>
           <span className="name-animation font-medium">Hello </span>
         </span>
         ___<span className="typing-dots"></span> I'm{" "}
-        <span className="typing-fade-name">Sanju Bhunia</span>
+        <span className="typing-fade-name hero-name">Sanju Bhunia</span>
       </h1>
 
       <p className="mt-4 text-gray-200 text-sm md:text-base max-w-xl">

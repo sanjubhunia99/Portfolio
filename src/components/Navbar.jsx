@@ -14,8 +14,8 @@ const scrollToSection = (id) => {
 const getClass = (active, section) =>
   `cursor-pointer px-2 py-1 text-base rounded-md transition-all ${
     active === section
-      ? "text-white underline underline-offset-4 decoration-2 decoration-white"
-      : "text-gray-300 hover:text-white hover:bg-gray-700"
+      ? "text-cyan-200 underline underline-offset-4 decoration-2 decoration-cyan-300"
+      : "text-slate-300 hover:text-cyan-100 hover:bg-white/10"
   }`;
 
 
@@ -87,7 +87,7 @@ const NavItems = ({ active, setActive, setOpen }) => {
         <a
           href={Resume}
           download
-          className="px-2 py-1 text-gray-300 hover:text-white"
+          className="px-2 py-1 text-slate-300 hover:text-cyan-100"
         >
           Resume
         </a>
@@ -117,7 +117,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-[#110514cc] backdrop-blur-xl text-white sticky top-0 z-50 px-3">
+      <div className="navbar bg-[#0b1224dd] backdrop-blur-xl text-white sticky top-0 z-50 px-3 border-b border-white/10">
         <div className="navbar-start">
           <img
             src={Logo}
@@ -140,13 +140,13 @@ const Navbar = () => {
         <div className="navbar-end lg:hidden relative">
           <button
             onClick={() => setOpen(!open)}
-            className="btn btn-ghost text-xl"
+            className="btn btn-ghost text-xl text-cyan-100 hover:bg-white/10"
           >
             {open ? "✖" : "☰"}
           </button>
 
           {open && (
-            <div className="absolute right-3 top-14 w-52 bg-black text-white rounded-lg p-4 shadow-lg z-999">
+            <div className="absolute right-3 top-14 w-52 rounded-lg border border-white/10 bg-[#111a32] p-4 text-white shadow-xl z-999">
               <div className="flex flex-col gap-2">
                 <NavItems
                   active={active}
@@ -162,7 +162,7 @@ const Navbar = () => {
       {showTop && (
         <button
           onClick={scrollTop}
-          className="fixed bottom-25 md:bottom-30 right-6 z-50 bg-linear-to-tr from-purple-600 to-pink-500 text-white p-3 rounded-full shadow-lg hover:scale-110 hover:shadow-pink-400/50 transition-all duration-300 animate-bounce"
+          className="fixed bottom-25 md:bottom-30 right-6 z-50 bg-linear-to-tr from-indigo-500 to-cyan-500 text-white p-3 rounded-full shadow-lg hover:scale-110 hover:shadow-cyan-400/50 transition-all duration-300 animate-bounce"
         >
           <FaArrowUp />
         </button>

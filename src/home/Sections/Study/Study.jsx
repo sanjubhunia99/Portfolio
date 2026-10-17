@@ -33,18 +33,18 @@ const Study = () => {
     <>
       <div
         id="education"
-        className="scroll-mt-20 text-2xl font-semibold underline text-white text-center mt-6 md:mt-10 mb-6 md:mb-8 p-5"
+        className="section-heading scroll-mt-20 text-2xl font-semibold text-center mt-6 md:mt-10 mb-6 md:mb-8 p-5"
       >
         🎓 Education
       </div>
       <div className="relative max-w-5xl mx-auto space-y-3 p-2">
-        <div className="absolute left-5 md:left-1/2 top-0 h-full w-0.5 bg-slate-900 md:-translate-x-1/2"></div>
+        <div className="absolute left-5 md:left-1/2 top-0 h-full w-0.5 bg-indigo-300/40 md:-translate-x-1/2"></div>
 
         {data.map((item, index) => {
           return (
             <div key={index} className="relative">
               <div
-                className="absolute left-1 md:left-1/2 md:top-1/2 -translate-y-1/2 md:-translate-x-1/2 top-6 w-4 h-4 bg-indigo-400 border-4 border-white rounded-full z-10 shadow"
+                className="absolute left-1 md:left-1/2 md:top-1/2 -translate-y-1/2 md:-translate-x-1/2 top-6 w-4 h-4 bg-cyan-300 border-4 border-[#111a35] rounded-full z-10 shadow-[0_0_12px_rgba(103,232,249,0.6)]"
                 aria-hidden="true"
               ></div>
               <Organization item={item} side={item.side} />

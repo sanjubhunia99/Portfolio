@@ -46,12 +46,12 @@ const Contact = () => {
 
   return (
     <div id="contact" className="scroll-mt-16 px-4 py-6 md:px-20">
-      <h1 className="text-2xl font-semibold underline text-white text-center mb-8">
+      <h1 className="section-heading text-2xl font-semibold text-white text-center mb-8">
         📸 Contact Me
       </h1>
 
       <div className="flex justify-center">
-        <div className="w-full max-w-md bg-[#681681bb] p-5 rounded-3xl shadow-2xl">
+        <div className="w-full max-w-md rounded-3xl border border-white/15 bg-gradient-to-br from-[#1e1b4b]/95 via-[#172554]/95 to-[#0f172a]/95 p-5 shadow-2xl shadow-indigo-950/40">
           <h2 className="text-lg font-semibold mb-4 text-white text-center">
             Send me a message
           </h2>
@@ -63,7 +63,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
-              className="w-full px-4 py-3 rounded-lg border bg-white text-black outline-none focus:ring-2 focus:ring-gray-300"
+              className="w-full rounded-lg border border-white/15 bg-[#0b1224]/80 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-cyan-300/60 focus:ring-2 focus:ring-cyan-300/30"
               required
             />
 
@@ -73,7 +73,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email Address"
-              className="w-full px-4 py-3 rounded-lg border bg-white text-black outline-none focus:ring-2 focus:ring-gray-300"
+              className="w-full rounded-lg border border-white/15 bg-[#0b1224]/80 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-cyan-300/60 focus:ring-2 focus:ring-cyan-300/30"
               required
             />
 
@@ -83,7 +83,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="How can I help you?"
-              className="w-full px-4 py-3 rounded-lg border bg-white text-black outline-none focus:ring-2 focus:ring-gray-300"
+              className="w-full rounded-lg border border-white/15 bg-[#0b1224]/80 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-cyan-300/60 focus:ring-2 focus:ring-cyan-300/30"
               required
             />
 
@@ -93,7 +93,7 @@ const Contact = () => {
               className={`w-full py-3 rounded-full font-semibold transition ${
                 loading
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-[#c307fce7] text-white hover:bg-gray-700 cursor-pointer"
+                  : "accent-button text-white hover:from-indigo-400 hover:to-cyan-400 cursor-pointer"
               }`}
             >
               {loading ? "Sending..." : "Send Message"}
